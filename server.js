@@ -11,15 +11,19 @@ app.use(express.urlencoded({ extended: true}));
 const connectDB = require("./DB/connection");
  connectDB();
 
-//use this to run different routes
-// const ManageBooksRouter = require('./manageBooks');
-// app.use('/', ManageBooksRouter);
+//uncomment one of this router to excecute the code
 
+//1
+const ManageBooksRouter = require('./manageBooks');
+app.use('/', ManageBooksRouter);
+
+//2
 // const userdetailsRouter = require('./UserDetails');
 // app.use('/', userdetailsRouter);
 
-const borrowedBooksRouter = require('./borrowedBooksList');
-app.use('/', borrowedBooksRouter);
+//3
+// const borrowedBooksRouter = require('./borrowedBooksList');
+// app.use('/', borrowedBooksRouter);
 
 function resolvePromise() {
   return rejectPromise();
