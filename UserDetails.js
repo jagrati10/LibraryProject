@@ -36,7 +36,6 @@ router.route('/newUser').post((req, res) => {
     newDetails.save()
         .then(() => res.json(newDetails))
         .catch(err => res.status(400).json('Error: ' + err));
-
 });
 
 module.exports = router;

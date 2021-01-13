@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: true}));
 const connectDB = require("./DB/connection");
  connectDB();
 
+//use this to run different routes
 // const ManageBooksRouter = require('./manageBooks');
 // app.use('/', ManageBooksRouter);
 

@@ -2,7 +2,6 @@
 const router = require('express').Router();
 const BorrowedBooks = require('./DB/borrowedBooksSchema');
 
-
 //get all data
 router.route('/AllBorrowedBooks').get((req, res) => {
     BorrowedBooks.find()
@@ -36,7 +35,6 @@ router.route('/newBorrowedBooks').post((req, res) => {
     newBorrowedBooks.save()
         .then(() => res.json(newBorrowedBooks))
         .catch(err => res.status(400).json('Error: ' + err));
-
 });
 
 module.exports = router;
