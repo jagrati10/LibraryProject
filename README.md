@@ -1,6 +1,6 @@
 # Prerequisites
 
-npm install
+NodeJS
 Tools like Postman for API testing
 
 # Steps to run the code
@@ -17,6 +17,19 @@ Tools like Postman for API testing
 3)
 //const borrowedBooksRouter = require('./borrowedBooksList');
 //app.use('/', borrowedBooksRouter);
+
+# for execution write these commands in git bash terminal
+
+1) npm install 
+
+It will install all the package I have used 
+
+2) node server.js 
+
+It will start the server and give you a port number, copy the port number and use that to hit the api
+
+3) everytime when you uncomment the routes in server js file, you have to run (node server.js) 
+
 
 # Specification about the routes I have created 
 
